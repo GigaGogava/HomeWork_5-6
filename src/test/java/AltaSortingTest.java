@@ -13,21 +13,11 @@ public class AltaSortingTest extends ChromeRunner {
                 .writeProductInSearch()
                 .clickSearchBtn()
                 .clickSortingField()
-                .chooseLowToHigh();
-sleep(3333);
-
-    }
-    @Test
-        public void SortingTestTest(){
-        sortingTestStep
-                .writeProductInSearch()
-                .clickSearchBtn()
-                .clickSortingField()
                 .chooseLowToHigh()
                 .checkSorting();
+        sleep(3333);
 
-        sleep(4444);
-        }
+    }
 
     }
 
