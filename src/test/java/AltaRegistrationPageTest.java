@@ -14,11 +14,13 @@ public class AltaRegistrationPageTest extends ChromeRunner {
                 .clickOnSignInRegBtn()
                 .goToRegPage()
                 .fillEmailInput(email)
-                .fillPasswordInput("123456")
-                .fillConfirmPasswordInput("123456")
+                .fillPasswordInput(password)
+                .fillConfirmPasswordInput(confirmPassword)
                 .fillFirstNameInput(randomName)
-                .fillLastNameInput(randomlastName);
-        Assert.assertTrue(registrationPageStep.signUpBtn.is(Condition.enabled));
+                .fillLastNameInput(randomlastName)
+                .clickRegistrationBtn();
+        Assert.assertFalse(registrationPageStep.signUpBtn.is(Condition.enabled));
+        Assert.assertTrue(registrationPageStep.seccsessfulRegistrationMessage.is(Condition.visible));
     }
     @Test
     public void negativeRegistrationCheck(){
@@ -27,6 +29,7 @@ public class AltaRegistrationPageTest extends ChromeRunner {
                 .negativeGoToRegPage()
                 .negativeFillEmailInput(negativeEmail)
                 .negativeFillPasswordInput(negativePassword)
+                .negativeFillConfirmPasswordInput(negativeConfirmPassword)
                 .negativeFillFirstNameInput(negativeFirstname)
                 .negativeFillLastNameInput(negativeLastname)
                 .negativeClickRegistrationBtn();

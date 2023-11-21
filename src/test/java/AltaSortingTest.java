@@ -18,6 +18,5 @@ public class AltaSortingTest extends ChromeRunner {
         sleep(3333);
 
     }
-
     }
 

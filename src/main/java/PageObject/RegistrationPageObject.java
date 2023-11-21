@@ -3,6 +3,7 @@ package PageObject;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selectors.byName;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class RegistrationPageObject {
@@ -17,7 +18,8 @@ public class RegistrationPageObject {
             signUpBtn = $(byName("dispatch[profiles.update]")),
             emailErrorMessage = $("#email_error_message"),
             passwordErrorMessage = $("#password1_error_message"),
-            confirmPasswordErrorMessage = $("#password2_error_message");
+            confirmPasswordErrorMessage = $("#password2_error_message"),
+            seccsessfulRegistrationMessage = $(byText("ანგარიში წარმატებით შეიქმნა."));
 }
 
 
