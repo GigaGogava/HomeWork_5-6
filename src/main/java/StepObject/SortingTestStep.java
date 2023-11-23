@@ -66,7 +66,7 @@ public class SortingTestStep extends SortingTestObject {
 
             String priceText = priceElements.get(i).getText();
             if (!priceText.isEmpty()) {
-                double currentPrice = Double.parseDouble(priceElements.get(i).text().replaceAll("[^0-9.]", ""));
+                double currentPrice = Double.parseDouble(priceElements.get(i).text());
                 if (currentPrice > maxPrice) {
                     maxPrice = currentPrice;
                 }
@@ -76,8 +76,6 @@ public class SortingTestStep extends SortingTestObject {
                 }
                 System.out.println("Highest Price: " + maxPrice);
                 System.out.println("Lowest Price: " + minPrice);
-            } else {
-                System.out.println("No prices found on the page.");
             }
         }
         return this;
