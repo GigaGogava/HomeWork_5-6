@@ -14,8 +14,10 @@ public class SortingTestObject {
         productElement = $(".ty-column3"),
         firstPriceElement = $("#sec_discounted_price_30939"),
 
-        secondPriceElement = $(".ty-price-num");
-
+        secondPriceElement = $(".ty-price-num"),
+        minPriceElement = $("#slider_67_17_left"),
+        maxPriceElement = $("#slider_67_17_right"),
+        priceElements = $(".ty-price-num");
 
 }
 

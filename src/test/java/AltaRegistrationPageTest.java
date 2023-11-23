@@ -38,6 +38,7 @@ public class AltaRegistrationPageTest extends ChromeRunner {
         Assert.assertTrue(registrationPageStep.passwordErrorMessage.is(Condition.visible));
 
 
+        }
 
     }
-}
+
