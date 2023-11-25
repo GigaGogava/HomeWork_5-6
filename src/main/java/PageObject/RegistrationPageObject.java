@@ -8,7 +8,8 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class RegistrationPageObject {
     public SelenideElement
-            SignRegBtn = $(".ty-account-info__title-txt"),
+
+            blabla = $(".ty-account-info__title-txt"),
             regBtn = $(".ty-login-reglink__a"),
             emailInput = $(byName("user_data[email]")),
             passwordInput = $("#password1"),

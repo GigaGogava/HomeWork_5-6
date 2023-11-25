@@ -8,8 +8,9 @@ import static DataObject.RegistrationPageData.*;
 
 public class AltaRegistrationPageTest extends ChromeRunner {
     RegistrationPageStep registrationPageStep = new RegistrationPageStep();
-    @Test
-    public void positiveRegistrationCheck(){
+
+        @Test
+        public void positiveRegistrationCheck () {
         registrationPageStep
                 .clickOnSignInRegBtn()
                 .goToRegPage()
@@ -23,7 +24,7 @@ public class AltaRegistrationPageTest extends ChromeRunner {
         Assert.assertTrue(registrationPageStep.seccsessfulRegistrationMessage.is(Condition.visible));
     }
     @Test
-    public void negativeRegistrationCheck(){
+        public void negativeRegistrationCheck () {
         registrationPageStep
                 .negativeClickOnSignInRegBtn()
                 .negativeGoToRegPage()
@@ -38,7 +39,6 @@ public class AltaRegistrationPageTest extends ChromeRunner {
         Assert.assertTrue(registrationPageStep.passwordErrorMessage.is(Condition.visible));
 
 
-        }
-
     }
 
+    }

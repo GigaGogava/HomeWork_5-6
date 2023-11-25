@@ -9,7 +9,7 @@ public class RegistrationPageStep extends RegistrationPageObject {
 
 //Positive Registration
     public RegistrationPageStep clickOnSignInRegBtn() {
-        SignRegBtn.click();
+        blabla.click();
         return this;
     }
 
@@ -53,7 +53,7 @@ public class RegistrationPageStep extends RegistrationPageObject {
 
 
     public RegistrationPageStep negativeClickOnSignInRegBtn() {
-        SignRegBtn.click();
+        blabla.click();
         return this;
     }
 

@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Alta Registration Suite" verbose="1" thread-count="1" parallel="tests">
-    <test name="RegistrationPage" parallel="tests">
+    <test name="RegistrationPageTest" parallel="tests">
         <classes>
             <class name="AltaRegistrationPageTest"/>
         </classes>
